@@ -1,0 +1,297 @@
+.sprite {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.ref-image {
+    position: relative;
+}
+.ref-image a {
+    display: block;
+    z-index: 99;
+    position: relative;
+}
+
+/* Joconde (LDV) */
+
+.joconde {
+    background: url("../images/picto/joconde.png") left center;
+    background-size: cover;
+}
+
+@keyframes joconde-play {
+    100% {
+        background-position: -28080px;
+    }
+}
+.joconde-active {
+    animation: joconde-play 4.4s steps(117) infinite;
+}
+
+.ref-image:hover .joconde {
+    top: -100px;
+}
+
+/* Vache (LLR) */
+
+.vache {
+    background: url("../images/picto/vache.png") left center;
+    background-size: cover;
+}
+
+@keyframes vache-play {
+    100% {
+        background-position: -28080px;
+    }
+}
+.vache-active {
+    animation: vache-play 4.4s steps(117) infinite;
+}
+
+.ref-image:hover .vache {
+    top: -116px;
+    right: 35px;
+}
+
+/* Mégaphone (Speak Up) */
+
+.megaphone {
+    background: url('../images/picto/megaphone.png') left center;
+    background-size: cover;
+}
+
+@keyframes megaphone-play {
+    100% { background-position: -17520px; }
+}
+
+.megaphone-active {
+    animation: megaphone-play 2.5s steps(73) infinite;
+}
+
+.ref-image:hover .megaphone {
+    right: -155px;
+    top: 90px;
+}
+
+/* Bouledogue (Vinyl Factory) */
+
+.bulldog {
+    background: url('../images/picto/icon-bouledogue.png') left center;
+    background-size: cover;
+}
+
+@keyframes bulldog-play {
+    100% { background-position: -16080px; }
+}
+
+.bulldog-active {
+    animation: bulldog-play 2.4s steps(67) infinite;
+}
+
+.ref-image:hover .bulldog {
+    top: -40px;
+    right: -155px;
+}
+
+/* Crème (SoleilRisk) */
+
+.creme {
+    background: url('../images/picto/creme.png') left center;
+    background-size: cover;
+}
+
+@keyframes creme-play {
+    100% { background-position: -17280px; }
+}
+
+.creme-active {
+    animation: creme-play 2.5s steps(72) infinite;
+}
+
+.ref-image:hover .creme {
+    top: -120px;
+    right: -10px;
+}
+
+/* Fusée (Coworko) */
+
+.fusee {
+    background: url('../images/picto/fusee.png') left center;
+    background-size: cover;
+}
+
+@keyframes fusee-play {
+    100% { background-position: -27120px; }
+}
+
+.fusee-active {
+    animation: fusee-play 4.3s steps(113) infinite;
+}
+
+.ref-image:hover .fusee {
+    left: -165px;
+    top: 120px;
+}
+
+/* Fiole (IChO) */
+
+.fiole {
+    background: url('../images/picto/fiole.png') left center;
+    background-size: cover;
+}
+
+@keyframes fiole-play {
+    100% { background-position: -21360px; }
+}
+
+.fiole-active {
+    animation: fiole-play 3.3s steps(89) infinite;
+}
+
+.ref-image:hover .fiole {
+    left: 330px;
+    top: -150px;
+}
+
+/* Livre (Souvenir Français) */
+
+.livre {
+    background: url('../images/picto/livre.png') left center;
+    background-size: cover;
+}
+
+@keyframes livre-play {
+    100% { background-position: -13200px; }
+}
+
+.livre-active {
+    animation: livre-play 2s steps(55) infinite;
+}
+
+.ref-image:hover .livre {
+    top: -140px;
+    right: 90px;
+
+}
+
+/* Main (Yard) */
+
+.dems {
+    background: url('../images/picto/dems.png') left center;
+    background-size: cover;
+
+}
+
+@keyframes dems-play {
+    100% { background-position: -18960px; }
+}
+
+.dems-active {
+    animation: dems-play 3.1s steps(79) infinite;
+}
+
+.ref-image:hover .dems {
+    right: -175px;
+    top: 15px;
+}
+
+@media screen and (max-width: 32em) {
+    .sprite {
+        visibility: hidden;
+    }
+}
+
+/* Inertie Front-page */
+/*
+
+@-webkit-keyframes neon {
+  from { -webkit-transform: rotate(0deg) translateX(9px) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX(9px) rotate(-360deg); }
+}
+
+@-moz-keyframes neon {
+  from { -moz-transform: rotate(0deg) translateX(9px) rotate(0deg); }
+  to   { -moz-transform: rotate(360deg) translateX(9px) rotate(-360deg); }
+}
+
+@-o-keyframes neon {
+  from { -o-transform: rotate(0deg) translateX(9px) rotate(0deg); }
+  to   { -o-transform: rotate(360deg) translateX(9px) rotate(-360deg); }
+}
+
+@keyframes neon {
+  from { transform: rotate(0deg) translateX(9px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(9px) rotate(-360deg); }
+}
+
+.neon {
+  -webkit-animation: neon 6s linear infinite;
+  -moz-animation: neon 6s linear infinite;
+  -o-animation: neon 6s linear infinite;
+  animation: neon 6s linear infinite;
+}
+
+.neon-anim{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-animation: neon-anim 6s linear infinite;
+  -moz-animation: neon-anim 6s linear infinite;
+  -o-animation: neon-anim 6s linear infinite;
+  animation: neon-anim 6s linear infinite;
+}
+
+@-webkit-keyframes neon-anim {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-moz-keyframes neon-anim {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-o-keyframes neon-anim {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes neon-anim {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+*/
+
+/*# sourceMappingURL=anim.css.map */

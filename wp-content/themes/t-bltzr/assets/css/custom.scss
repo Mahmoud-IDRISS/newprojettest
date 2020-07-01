@@ -1,0 +1,629 @@
+@font-face {
+  font-family: 'cocogoose_proregular';
+  src: url('../fonts/cocogoose-pro-regular-ttf-webfont.woff2') format('woff2'),
+  url('../fonts/cocogoose-pro-regular-ttf-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$rose  : #ff3366;
+$or    : #e0cf2f;
+$noir  : #2a2728;
+
+.t-rose{
+  color: $rose;
+}
+.t-or{
+  color: $or;
+}
+
+.coor{
+  margin-top: 30px;
+  overflow: visible;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  a {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    background: linear-gradient(45deg, #f2279e, #ff3366);
+    padding: 2px;
+    border-radius: 30px;
+    font-family: ingra, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    span {
+      background: #040404;
+      color: white;
+      padding: 9px 25px;
+      display: block;
+      border-radius: 30px;
+      transition: all 2s ease-in-out;
+    }
+    &:hover {
+      text-decoration: none;
+      font-family: ingra, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      transform: scale(1.1);
+      span{
+        background: linear-gradient(45deg, #f2279e, #ff3366);
+      }
+    }
+  }
+}
+
+// SVG Intro
+.mask-path {
+  stroke-dasharray: 3000px;
+  stroke-dashoffset: 3000px;
+  animation: draw 3s ease-in forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+// Fin svg intro
+
+// Intro
+.intro{
+  width: 100%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  background: url(../images/intro.jpg) #050505 no-repeat center center;
+  background-size: cover !important;
+  .content-intro{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    h3{
+      font-family: ingra, sans-serif;
+      font-style: normal;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 200;
+      letter-spacing: 5px;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+    h1{
+      font-family: 'cocogoose_proregular';
+      font-style: normal;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 120px;
+      letter-spacing: 18px;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .signature{
+      position: relative;
+      height: 250px;
+      width: 100%;
+      svg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.navbar-default .logo {
+  height: 60px;
+}
+.hamburger-menu {
+  margin: 20px 0 10px;
+}
+
+canvas{
+  z-index: 3 !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+h2.titrage {
+  color: #fff;
+  font-size: 70px;
+  font-family: 'cocogoose_proregular';
+  margin: 0 0 20px 0;
+  transform: rotate(-5deg);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-style: italic;
+}
+h4.titrage2 {
+  font-style: italic;
+  transform: rotate(-5deg);
+  font-family: ingra, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.showcase{
+  padding-top: 650px;
+  position: relative;
+  background-size: 1800px !important;
+  background: url('../images/ref.jpeg') #000 center -100px no-repeat;
+  .header{
+    padding-bottom: 100px;
+    background: transparent;
+  }
+  .voile{
+    position: absolute;
+    background: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+.loggi{
+  max-width: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+.graf{
+  position: absolute;
+  bottom: -130px;
+  left: -420px;
+  content: "";
+  display: block;
+  height: 700px;
+  width: 700px;
+  z-index: 99;
+  background: url(../images/co.gif) center center no-repeat;
+  background-size: contain !important;
+}
+
+
+footer{
+  padding-top: 80px;
+  .logo{
+    width: 60px;
+  }
+  .sub-footer{
+    font-family: 'cocogoosedemibold';
+    color: #fff;
+    .copyright{
+      color: #fff;
+    }
+    ul{
+      li{
+        a {
+          float: left;
+          font-size: 12px;
+          font-weight: 700;
+          color: #fff;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          -ms-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          &:hover{
+            text-decoration: none;
+            color: $rose;
+          }
+        }
+      }
+    }
+  }
+}
+.footer-space {
+  padding: 260px;
+}
+
+.selection{
+  margin-top: -158px;
+}
+.ref{
+  margin-bottom: 140px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .ref-details{
+    text-align: left;
+    margin-top: 30px;
+    h5{
+      font-family: ingra, sans-serif;
+      color: #fff;
+      font-weight: normal;
+      font-size: 25px;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      strong{
+        margin-bottom: 15px;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+      }
+
+    }
+  }
+  .ref-image{
+    position: relative;
+    transform: scale(1);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    &:hover{
+      transform: scale(1.02);
+      .vo{
+        display: flex;
+      }
+    }
+  }
+  .vo{
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    text-align: center;
+    .btncta{
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      background: linear-gradient(45deg, #f2279e, #ff3366);
+      padding: 2px;
+      border-radius: 30px;
+      font-family: ingra, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: #fff;
+      letter-spacing: 2px;
+      font-size: 14px;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      span {
+        text-transform: uppercase;
+        color: white;
+        padding: 9px 25px;
+        display: block;
+        border-radius: 30px;
+        transition: all 2s ease-in-out;
+      }
+      &:hover {
+        text-decoration: none;
+        font-family: ingra, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        transform: scale(1.1);
+        span{
+          background: linear-gradient(45deg, #f2279e, #ff3366);
+        }
+      }
+    }
+  }
+}
+.ref-llr{
+  margin-top: 170px;
+}
+.ref-2{
+  padding-left: 80px;
+}
+.ref-3{
+  padding-right: 100px;
+}
+.ref-4{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.ref-5{
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.presentation{
+  background: #000;
+  padding: 200px 0 0;
+  width: 100%;
+  float: left;
+  text-align: center;
+  h2{
+    text-align: center;
+  }
+}
+footer {
+  padding-top: 30px;
+  width: 100%;
+  float: left;
+  background: #000;
+  color: #fff;
+  position: inherit;
+  z-index: 2;
+  .logo{
+    margin-top: 50px;
+  }
+  a, .copyright{
+    font-family: ingra, sans-serif;
+    font-weight: 500 !important;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  .signature{
+    margin: 0 auto 50px;
+    max-width: 200px;
+  }
+}
+.specialites{
+  position: relative;
+  overflow: hidden;
+  .blur{
+    height: 700px;
+    width: 700px;
+    background: url('../images/cercle.jpg') center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+    opacity: 0.5;
+  }
+  .ligne{
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    p{
+      font-family: ingra, sans-serif;
+      color: #fff;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+      b{
+        color: $rose;
+      }
+    }
+    .neon{
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .off{
+      opacity: 1;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .on{
+      opacity: 0;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    &:hover{
+      .on{
+        opacity: 1;
+      }
+      .off{
+        opacity: 0;
+      }
+    }
+  }
+  .spetexte1{
+    padding-top: 120px;
+  }
+  .spetexte2{
+    padding-top: 80px;
+  }
+  .neon2{
+    position: relative;
+    top: -80px;
+  }
+  .neon3{
+    position: relative;
+    top: -80px;
+  }
+  .spetexte3{
+    padding-top: 80px;
+  }
+  .ligne1{
+    margin-top: 100px;
+  }
+  .ligne2, .ligne3{
+    margin-top: 200px;
+  }
+}
+.ligne3{
+  padding-bottom: 200px;
+}
+.tel{
+  color: #fff;
+  font-family: 'cocogoose_proregular';
+
+}
+@media only screen and (max-width: 767px){
+  .tel{
+    display: block;
+    text-align: right;
+    margin: -15px 25px 5px 0px;
+  }
+  .ligne3{
+    padding-bottom: 0;
+  }
+  .intro .content-intro{
+    h1{
+      font-size: 40px;
+      letter-spacing: 8px;
+    }
+    h3{
+      letter-spacing: 0px;
+      font-size: 12px;
+    }
+    .signature {
+      position: relative;
+      height: 210px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .showcase {
+    padding-top: 250px;
+    position: relative;
+    background-size: 600px !important;
+    background: url(../test/9.jpeg) #000 center 0 no-repeat;
+    .ref{
+      padding: 0 !important;
+      margin-bottom: 80px;
+    }
+  }
+  h2.titrage {
+    font-size: 45px;
+    margin: 0 0 10px 0;
+  }
+  h4.titrage2 {
+    font-size: 18px;
+  }
+  .specialites .ligne{
+    .neon{
+      min-height: 200px;
+      img {
+        position: inherit;
+      }
+      .off{
+        display: none;
+      }
+      .on{
+        opacity: 1;
+      }
+    }
+    .neon1{
+      position: relative;
+      left: -30px;
+    }
+    .neon2{
+      position: relative;
+      top: 0;
+      right: -30px;
+    }
+    .neon3{
+      position: relative;
+      top: 0;
+      left: -30px;
+    }
+    .spetexte{
+      padding: 0;
+      margin-top: 40px;
+    }
+  }
+  .specialites .ligne1 {
+    margin-top: 60px;
+  }
+  .specialites .ligne2, .specialites .ligne3 {
+    margin-top: 60px;
+  }
+  .presentation {
+    padding: 100px 0;
+  }
+  footer .sub-footer ul{
+    text-align: center;
+  }
+  footer .sub-footer ul li {
+    text-align: center;
+    float: none;
+    margin-right: 40px;
+    display: inline-block;
+  }
+  footer .sub-footer .copyright {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+  .blur{
+    display: none;
+  }
+}
+
+.loading {
+  background: #000;
+}
+.waiting{
+  font-family: ingra, sans-serif;
+}
+.loading .loading-image {
+  margin-top: -70px;
+}
+
+.gfield_error{
+  .gfield_label{
+    font-family: "ingra", sans-serif;
+  }
+  .validation_message{
+    display: none;
+  }
+}
+.gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label {
+  font-family: "ingra", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.gform_confirmation_message{
+  img{
+    margin: 0 auto;
+    display: block;
+  }
+  p{
+    font-family: "ingra", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+  }
+}
